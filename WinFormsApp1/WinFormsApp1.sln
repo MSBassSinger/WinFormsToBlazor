@@ -7,7 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{655CD2CE-15EB-43FC-B757-D95BDB77CFB5}"
 	ProjectSection(SolutionItems) = preProject
-		Convert the WinForms Form Copilot Chat Text.txt = Convert the WinForms Form Copilot Chat Text.txt
+		WinFormsApp1\Blazor Page.png = WinFormsApp1\Blazor Page.png
+		WinFormsApp1\Copilot Request.png = WinFormsApp1\Copilot Request.png
+		..\README.md = ..\README.md
+		WinFormsApp1\WinForms Page.png = WinFormsApp1\WinForms Page.png
 	EndProjectSection
 EndProject
 Global
@@ -23,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1883AE6-A7B6-4B82-AD5B-B563225B80B9} = {655CD2CE-15EB-43FC-B757-D95BDB77CFB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E41D2E0-CA44-44A1-9E4C-CE4D112C3FF0}

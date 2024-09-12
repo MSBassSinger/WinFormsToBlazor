@@ -1,7 +1,0 @@
-Convert the WinForms form #file:Form1.cs , #file:Form1.Designer.cs , and #file:Form1.resx , to a Blazor razor component 
-as UserInput.razor, UserInput.razor.css, and UserInput.razor.cs, with namespace WinFormsToBlazorApp.Client.Pages.
-
-Convert the event methods found in Form1.cs to their equivalent events in HTML, such as HTML @Onclick matching a WinForms 
-button click event.
-
-For a System.Windows.Forms.GroupBox, use an HTML <fieldset> with a <legend> and use the GroupBox.Text value as the <legend> text.

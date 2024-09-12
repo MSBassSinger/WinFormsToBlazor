@@ -55,6 +55,7 @@ namespace WinFormsToBlazorApp.Client.Pages
         }
     }
 
+    // Copilot-generated class
     public class UserInformation
     {
         public string FirstName

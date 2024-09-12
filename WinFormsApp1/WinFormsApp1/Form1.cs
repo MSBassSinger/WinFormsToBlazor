@@ -2,6 +2,8 @@ namespace WinFormsApp1
 {
     public partial class frmUserInformation : Form
     {
+        // Designed the form by drag-and-drop, then setting events and properties.
+        // Nothing here is manually coded.
         public frmUserInformation()
         {
             InitializeComponent();
