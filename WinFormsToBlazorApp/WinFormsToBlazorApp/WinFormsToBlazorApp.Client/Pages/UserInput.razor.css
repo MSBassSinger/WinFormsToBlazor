@@ -1,0 +1,9 @@
+﻿/* Add your custom CSS here */
+.form-control {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn {
+    margin-right: 10px;
+}

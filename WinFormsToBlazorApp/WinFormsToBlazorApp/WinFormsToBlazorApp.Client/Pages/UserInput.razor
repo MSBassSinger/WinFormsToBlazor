@@ -1,0 +1,61 @@
+﻿@page "/userinput"
+@namespace WinFormsToBlazorApp.Client.Pages
+@inherits UserInputBase
+
+<EditForm Model="@userInformation" OnValidSubmit="@HandleValidSubmit">
+    <fieldset>
+        <legend>Name</legend>
+        <div>
+            <label for="firstName">First</label>
+            <InputText id="firstName" @bind-Value="userInformation.FirstName" class="form-control" @onblur="txtFirstName_Leave" />
+        </div>
+        <div>
+            <label for="lastName">Last</label>
+            <InputText id="lastName" @bind-Value="userInformation.LastName" class="form-control" @onblur="txtLastName_Leave" />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Address</legend>
+        <div>
+            <label for="addressLine1">Line 1</label>
+            <InputText id="addressLine1" @bind-Value="userInformation.AddressLine1" class="form-control" />
+        </div>
+        <div>
+            <label for="addressLine2">Line 2</label>
+            <InputText id="addressLine2" @bind-Value="userInformation.AddressLine2" class="form-control" />
+        </div>
+        <div>
+            <label for="city">City</label>
+            <InputText id="city" @bind-Value="userInformation.City" class="form-control" />
+        </div>
+        <div>
+            <label for="state">State</label>
+            <InputSelect id="state" @bind-Value="userInformation.State" class="form-control" @onchange="lstState_ValueMemberChanged">
+                @foreach (var state in states)
+
+                {
+                    <option value="@state">@state</option>
+                }
+            </InputSelect>
+        </div>
+        <div>
+            <label for="zip">Zip</label>
+            <InputText id="zip" @bind-Value="userInformation.Zip" class="form-control" @onblur="txtZip_Leave" />
+        </div>
+        <div>
+            <InputCheckbox id="useAsShipping" @bind-Value="userInformation.UseAsShipping" @onchange="chkUseAsShipping_CheckedChanged" />
+            <label for="useAsShipping">Use as shipping address?</label>
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="ClearForm">Clear Form</button>
+        <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </div>
+
+    <div>
+        <a href="#" @onclick="MoreInfo">Click for more info ...</a>
+    </div>
+</EditForm>
